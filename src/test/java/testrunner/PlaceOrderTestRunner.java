@@ -9,7 +9,7 @@ import pages.PlaceOrderPage;
 public class PlaceOrderTestRunner extends Setup {
     PlaceOrderPage placeOrderPage;
 
-    @Test
+    @Test(description = "Placing a new order as a guest user")
     public void placeOrderTest() throws InterruptedException {
         placeOrderPage = new PlaceOrderPage(driver);
         placeOrderPage.orderPlace();

@@ -20,7 +20,7 @@ public class RegistrationTestRunner extends Setup {
         return sb.toString();
     }
 
-    @Test()
+    @Test(description = "Register a new user in the E-commerce website")
     public void registrationTest() throws InterruptedException {
         registrationPage = new RegistrationPage(driver);
         registrationPage.doRegistration("Mehedi Hasan", "Shovon", "1", "November", "1996", "shovon"+generateRandomNumber(3)+"@gmail.com", "Jatri Services Ltd", "shovon0001", "shovon0001");
