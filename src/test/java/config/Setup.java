@@ -18,11 +18,7 @@ public class Setup {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        driver.get("https://demo.nopcommerce.com/");
-
-        WebElement menuElectronics = driver.findElement(By.xpath("//ul[@class='top-menu notmobile']//a[normalize-space()='Electronics']"));
-        Actions action = new Actions(driver);
-        action.moveToElement(menuElectronics).perform();
+        driver.get("https://www.saucedemo.com/");
     }
 
     @AfterTest
