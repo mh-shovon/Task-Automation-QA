@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite name = "Task-Automation-QA-BS23">
 
-    <test name = "Place Order Test Using Selenium">
+    <test name = "Place Order Test">
         <classes>
             <class name = "testrunner.PlaceOrderTestRunner">Test-2</class>
         </classes>
